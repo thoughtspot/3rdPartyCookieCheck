@@ -10,4 +10,4 @@ onMessage((message) => {
   const enabled = document.cookie.indexOf("test3pc=") !== -1;
 
   return enabled;
-});
+}, window.parent);
