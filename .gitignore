@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.d.ts
+*.d.ts.map
+
+dist-lib
