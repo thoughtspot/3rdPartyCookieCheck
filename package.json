@@ -1,11 +1,24 @@
 {
   "name": "@thoughtspot/third-party-cookie-check",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "A library to check if third party cookies are enabled",
+  "author": "ThoughtSpot",
+  "license": "MIT",
+  "homepage": "https://github.com/thoughtspot/third-party-cookie-check",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thoughtspot/third-party-cookie-check.git"
+  },
+  "keywords": [
+    "third-party-cookie-check",
+    "third-party-cookies",
+    "cookies",
+    "cookie-check"
+  ],
   "scripts": {
     "dev": "vite --config vite.pages.config.ts",
-    "build": "tsc && vite build --config vite.lib.config.ts",
+    "build": "tsc && vite build --config vite.pages.config.ts",
     "build:lib": "tsc -p tsconfig.lib.json"
   },
   "exports": {
