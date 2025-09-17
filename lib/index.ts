@@ -6,6 +6,7 @@ export const isThirdPartyCookiesEnabled = (): Promise<boolean> => {
     iframe.src = "https://cookie-check.thoughtspot.app";
     iframe.width = "1";
     iframe.height = "1";
+    iframe.style.border = "none";
     iframe.onload = async () => {
         const enabled = await sendMessage(iframe, { type: "is-third-party-cookies-enabled" });
         document.body.removeChild(iframe);
