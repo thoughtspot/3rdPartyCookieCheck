@@ -3,7 +3,7 @@ import { sendMessage } from "promise-postmessage";
 export const isThirdPartyCookiesEnabled = (): Promise<boolean> => {
     const { resolve, promise } = Promise.withResolvers<boolean>();
     const iframe = document.createElement("iframe");
-    iframe.src = "https://3rdpartycookiecheck-29h.pages.dev";
+    iframe.src = "https://cookie-check.thoughtspot.app";
     iframe.width = "1";
     iframe.height = "1";
     iframe.onload = async () => {
